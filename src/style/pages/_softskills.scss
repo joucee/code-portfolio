@@ -1,0 +1,67 @@
+.soft-skills {
+    min-height: 60vh;
+    width: 100%;
+    color: $black;
+    display: flex;
+    
+    h2 {
+        margin-bottom: 60px;
+    }
+    .soft-skill-lr {
+        display: flex;
+        width: 100%;
+    .soft-skill-left {
+        width: 70%;
+        @media screen and (max-width: 1024px) {
+            width: 100%;
+          }
+    .softskills-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    min-height: 60vh;
+    @media screen and (max-width: 850px) {
+            display: block;
+            width: 60%;
+            margin: 0 auto;
+          }
+    .softskill-element {
+        padding-top: 30px;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+        background: white;
+        border-radius: 5px;
+        border: 1px solid $white;
+        p {
+            width: 80%;
+            margin: 0 auto;
+            @media screen and (max-width: 450px) {
+                display: none;
+              }
+        }
+        &:hover {
+            transition: 0.3s ease-in;
+            border: 1px solid $orange; 
+        }
+        .animated-gif {
+            height: 80px;
+            width: 80px;
+        }
+    }
+}
+    }
+.soft-skill-right {
+    margin: 0;
+    padding: 0;
+    height: 60vh;
+    width: 30%;
+    background: url(/src/img/pc.jpg) center/cover;
+    @media screen and (max-width: 1024px) {
+        display: none;
+      }
+}
+    }
+}
+
+

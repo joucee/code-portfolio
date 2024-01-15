@@ -1,0 +1,173 @@
+
+.home {
+    height: 100vh;
+    color: $white;
+    background: $black;
+   
+      .navbar {
+        padding-top: 20px;
+        height: 70px;
+        display: flex;
+        justify-content: space-around;
+        justify-content: center;
+        align-items: center;
+        
+        .logo {
+          background: url(/src/img/logo.png) center/cover;
+          height: 150px;
+          width: 150px;
+          z-index: 10;
+          @media screen and (max-width: 910px) {
+            display: none;
+          }
+        }
+        .menu {
+            display: flex;
+            justify-content: flex-end;
+            width: 70%;
+            @media screen and (max-width: 910px) {
+              width: 100%;
+              justify-content: flex-start;
+            }
+            @media screen and (max-width: 780px) {
+              display: none;
+            }
+            ul{
+                display: flex;
+                width: 50%;
+                justify-content: space-evenly
+              }
+              li a{
+                color: $white;
+                text-decoration: none;
+                font-size: 1rem;
+                &:hover {
+                  color: $blue;
+                  transition: 0.8s;
+                }
+              }
+          }
+      }
+      
+      
+      .home-content{
+       display: flex;
+        height: 80%;
+        align-items: center;
+        margin: 0 auto;
+        width: 80%;
+        @media screen and (max-width: 910px) {
+          width: 100%;
+          text-align: left;
+          padding-left: 40px;
+        }
+        .home-content-left {
+          width: 60%;
+          @media screen and (max-width: 910px) {
+            width: 100%;
+          }
+          #homename {
+            color: $blue;
+            font-weight: bold;
+            &::selection {
+              color: white;
+            }
+          }
+          #dev {
+            color: $blue;
+            font-weight: bold;
+            &::selection {
+              color: white;
+            }
+          }
+        h1 {
+            font-size: 3.2rem;
+            font-weight: 400;
+            position: relative;
+            @media screen and (max-width: 1024px) {
+              font-size: 2.3rem;
+            }
+            @media screen and (max-width: 910px) {
+              width: 100%;
+            }
+            @media screen and (max-width: 570px) {
+              width: 80%;;
+            }
+          }
+            &::selection {
+              color: $blue;
+            }
+            
+          }
+          h1::after {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0%;
+            bottom: -25px;
+            width:100px;
+            height: 3px;
+            z-index: 10;
+            background: $white;
+          }
+        #text {
+            width: 50%;
+            padding-top: 15px;
+            &::selection {
+              color: $blue;
+            }
+          }
+        }
+        .home-content-right {
+          align-items: center;
+          text-align: center;
+          @media screen and (max-width: 910px) {
+            display: none;
+          }
+          .App-logo {
+            height: 40vmin;
+            pointer-events: none;
+            @media screen and (max-width: 1024px) {
+              height: 200px;
+              padding-left: 40px;
+            }
+          
+          }
+          
+          @media (prefers-reduced-motion: no-preference) {
+            .App-logo {
+              animation: App-logo-spin infinite 20s linear;
+            }
+          }
+          
+          
+          @keyframes App-logo-spin {
+            from {
+              transform: rotate(0deg);
+            }
+            to {
+              transform: rotate(360deg);
+            }
+          }
+          
+        }
+      }
+      .social-media {
+
+            ul {
+            display: flex;
+            justify-content: space-evenly;
+            width: 40%;
+            margin: 0 auto;
+            }
+            li a{
+              color: $white;
+              &:hover {
+                color: $blue;
+              }
+            }
+            i:hover{
+                transform: rotate(360deg);
+                transition: 0.8s ease-in-out;
+              }
+          }

@@ -1,0 +1,94 @@
+.project {
+    min-height: 70vh;
+    #project1 {
+        background: url(/src/img/pokejouce.png) center/cover;
+    }
+    #project2 {
+        background: url(/src/img/pokedex.png) center/cover;
+    }
+    #project3 {
+        background: url(/src/img/crypto.png) center/cover;
+    }
+    #project4 {
+        background: url(/src/img/cake.png) center/cover;
+    }
+    h3 {
+        font-size: 2.5rem;
+        margin-left: 40px;
+        margin-bottom: 0;
+    }
+    p {
+        font-size: 1.2rem;
+        margin-left: 40px;
+    }
+    span {
+        color: $blue;
+    }
+    .project-row-container {
+        min-height: 60vh;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 80px;
+        .project-row-element {
+            height: 400px;
+            width: 400px;
+            margin: 0 auto;
+            margin-bottom: 50px;
+            border-radius: 5px;
+            -webkit-filter: grayscale(100%); 
+            filter: grayscale(100%); 
+            transition: 1s;
+            cursor: pointer;
+            p, .hidden-element {
+                position: absolute;
+                opacity: 0;
+                max-width: 100%;
+                transition: opacity .3s ease-out;
+              }
+              .hidden-element {
+                position: fixed;
+                bottom: 0;
+                height: 40%;
+                width: 100%;
+              }
+            p {
+                inset: auto auto 20px 30px;
+                margin: 0;
+                width: 80%;
+                font-weight: bold;
+              }
+              
+            &:hover  {
+            -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+             }
+             &:hover .hidden-element {
+                position: fixed;
+                transition: 0.3s ease-out;
+                opacity: 1;
+                background: lightgray;
+                opacity: 0.6;
+              
+             }
+            &:hover h4 {
+                inset: auto auto 100px 30px;
+                transition: inset .3s ease-out;
+                z-index: 10;
+              }
+            &:hover p {
+                opacity: 1;
+                transition: opacity .5s .1s ease-in;
+              }
+              
+            .project-title {
+                position: absolute;
+                inset: auto auto 30px 30px;
+                margin: 0;
+                 transition: inset .3s .3s ease-out;
+                font-weight: bold;
+                font-size: 2rem;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

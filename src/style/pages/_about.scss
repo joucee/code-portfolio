@@ -1,0 +1,86 @@
+.about {
+  overflow-x: hidden;
+  min-height: 50vh;
+  #name {
+    color: $orange;
+    font-weight: bold;
+  }
+  #subname {
+    margin: 0;
+    padding-bottom: 20px;
+    
+  }
+  .about-container {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.068);
+   
+    .about-im {
+        width: 500px;
+        min-height: 50vh;
+        text-align: right;
+        background: url(/src/pic/me1.jpg) center/cover;
+        @media screen and (max-width: 935px) {
+          display: none;
+        }
+       }
+       
+       p {
+      letter-spacing: 1px;
+      width: 70%;
+      @media screen and (max-width: 930px) {
+        width: 100%;
+      }
+  
+       }
+       .about-content {
+         width: 70%;
+        min-height: 50vh;
+        margin-left: 40px;
+        display: flex;
+        flex-direction: column;
+    justify-content: space-evenly;
+    @media screen and (max-width: 930px) {
+      width: 100%;
+    }
+        h2 {
+          padding-top: 10px;
+          text-align: left;
+          letter-spacing: 1.5px;
+          position: relative;
+          @media screen and (max-width: 450px) {
+            display: none;
+          }
+        }
+        h2::after {
+          content: "";
+          display: block;
+          position: absolute;
+          margin-left: 40px;
+          left: 0;
+          bottom: -15px;
+          width:100px;
+          height: 5px;
+          background: $orange;
+        }
+         h3{
+            color: $blue;
+            font-size: 2rem;
+            margin: 0;
+            margin-bottom: -20px;
+            @media screen and (max-width: 1260px) {
+              font-size: 1.3rem;;
+            }
+          }
+          p {
+            margin: 0;
+          }
+          button {
+            margin-right: 20px;
+          }
+       }
+       
+  }
+} 
